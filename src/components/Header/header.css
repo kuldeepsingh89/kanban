@@ -1,0 +1,6 @@
+.header {
+  padding: 1rem 0;
+  background-color: var(--clr-white);
+  width: 100vw;
+  border-bottom: 1px solid var(--clr-grey-10);
+}

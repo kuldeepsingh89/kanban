@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-color: 1px solid var(--clr-grey-10);
+  width: 350px;
+  height: 150px;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}

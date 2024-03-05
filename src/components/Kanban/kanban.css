@@ -1,0 +1,104 @@
+.card-bucket {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.card-bucket--header__group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-bucket--header__group h2 {
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+.card-bucket--header__group--left {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.card-bucket--header__group--left .card-items--count {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.card-bucket--header__group--right {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.single-card--bucket {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.4rem 1rem;
+}
+
+.single-card--bucket .ticket-card--body {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.single-card--bucket .ticket-id {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.single-card--bucket .ticket-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.single-card--bucket .ticket-tag {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.single-card--bucket .tag {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+}
+
+.single-card--bucket .tag::before {
+  content: " ";
+  display: inline-block;
+  border-radius: 50%;
+  background-color: lightgray;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.ticket-icon > svg {
+  vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  .card-bucket {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: initial;
+    gap: 2rem;
+  }
+
+  .card-bucket .card-bucket__list {
+    width: 100%;
+  }
+}

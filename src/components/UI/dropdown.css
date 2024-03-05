@@ -1,0 +1,9 @@
+.dropdown-list {
+  display: flex;
+  border-color: var(--clr-grey-10) !important;
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 0.2rem;
+  outline: none;
+  width: 6rem;
+}

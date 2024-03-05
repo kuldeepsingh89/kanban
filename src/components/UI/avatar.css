@@ -1,0 +1,17 @@
+.user-avatar {
+  position: relative;
+}
+
+#user-status {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: grey;
+  border-radius: 50%;
+  top: 14px;
+  right: 0;
+}
+
+#user-status.active {
+  background-color: rgb(102, 238, 102);
+}
