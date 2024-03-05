@@ -33,11 +33,13 @@ export const Menu = ({ children, icon }) => {
       <div className="menu-header menu-border" ref={menuRef}>
         {/* icon */}
         {icon}
-        <span>Display</span>
+        <span className="font-12">Display</span>
 
         {/* icon */}
-        <HiChevronDown width={14} height={14} />
-        {isMenuOpen && <div className="menu-list br-common">{children}</div>}
+        <HiChevronDown size={12} />
+        {isMenuOpen && (
+          <div className="menu-list bs-common br-common">{children}</div>
+        )}
       </div>
     </div>
   );

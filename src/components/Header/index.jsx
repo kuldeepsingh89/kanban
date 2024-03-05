@@ -27,11 +27,11 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <Menu icon={<HiAdjustmentsHorizontal width={14} height={14} />}>
+        <Menu icon={<HiAdjustmentsHorizontal size={16} />}>
           <MenuItems>
             <div className="menu-items--space">
               <div className="menu-items--group">
-                <span className="clr-grey-5">Grouping</span>
+                <span className="clr-grey-5 font-12">Grouping</span>
                 <DrowDown
                   items={grouping}
                   handleChange={handleGroup}
@@ -39,7 +39,7 @@ export const Header = () => {
                 />
               </div>
               <div className="menu-items--group">
-                <span className="clr-grey-5">Ordering</span>
+                <span className="clr-grey-5 font-12">Ordering</span>
                 <DrowDown
                   items={ordering}
                   handleChange={handleOrder}

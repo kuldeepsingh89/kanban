@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const UserAvatar = ({ name, size = 40, round = true, active = false }) => {
   return (
     <div className="user-avatar">
-      <Avatar name={name} size={size} round={round} />
+      <Avatar name={name} size={size} round={round} className="font-12" />
       {active && (
         <div id={`user-status`} className={`${active ? "active" : ""}`} />
       )}

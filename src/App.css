@@ -1,9 +1,9 @@
 .container {
-  width: 90vw;
+  width: 95vw;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1290px;
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }

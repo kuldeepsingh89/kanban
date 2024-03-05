@@ -7,10 +7,11 @@
 }
 
 .menu .menu-list {
-  width: 16rem;
+  width: 22rem;
+  /* height: 64px; */
   background-color: var(--clr-white);
   position: absolute;
-  top: 2.75rem;
+  top: 2.5rem;
   z-index: 999;
   left: 0;
 }
@@ -23,10 +24,9 @@
 .menu-header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.1rem;
-  padding: 0.4rem 1rem;
-  font-size: 0.75rem;
-  width: 7rem;
+  justify-content: space-between;
+  /* gap: 0.1rem; */
+  padding: 0.2rem 0.5rem;
+  width: 6.5rem;
   cursor: pointer;
 }

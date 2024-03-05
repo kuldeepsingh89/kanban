@@ -4,7 +4,7 @@ import Kanban from "../components/Kanban";
 import { useEffect } from "react";
 import { getKanbanDetails } from "../utils/api";
 import { END_POINTS } from "../config";
-import Loader from "../components/UI/Loader";
+// import Loader from "../components/UI/Loader";
 
 const Dashboard = () => {
   const kanbanDetails = useKanbanStore((state) => ({
@@ -39,9 +39,9 @@ const Dashboard = () => {
     fetchKanbanDetails();
   }, []);
 
-  if (!Object.keys(kanbanDetails.data).length) {
-    return <Loader />;
-  }
+  // if (!Object.keys(kanbanDetails.data).length) {
+  //   return <Loader />;
+  // }
 
   return <Kanban groups={groups} data={kanbanDetails.data} />;
 };

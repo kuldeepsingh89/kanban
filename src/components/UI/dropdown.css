@@ -3,7 +3,16 @@
   border-color: var(--clr-grey-10) !important;
   background-color: #fff;
   justify-content: space-between;
-  padding: 0.2rem;
+  padding: 6px 8px;
   outline: none;
-  width: 6rem;
+  width: 8rem;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  top: 8px;
+  right: 5px;
 }

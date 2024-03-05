@@ -45,12 +45,14 @@ const Kanban = ({ groups, data }) => {
                     {data[group]?.length ?? 0}
                   </span>
                 </div>
-                <div className="card-bucket--header__group--right">
-                  {/* icon */}
-                  {icons("plus")}
-                  {/* icon */}
-                  {icons("ellipse")}
-                </div>
+                {data[group]?.length && (
+                  <div className="card-bucket--header__group--right">
+                    {/* icon */}
+                    {icons("plus")}
+                    {/* icon */}
+                    {icons("ellipse")}
+                  </div>
+                )}
               </div>
               {data[group]?.map((item) => {
                 return (
@@ -69,10 +71,12 @@ const Kanban = ({ groups, data }) => {
                         </div>
                         <div className="ticket-tag">
                           {/* icon */}
-                          {icons("priority-h")}
+                          <span className="br-common-2 tag-priority">
+                            {icons("priority-h")}
+                          </span>
 
                           {item.tag.length ? (
-                            <span className="tag clr-grey-5 br-common">
+                            <span className="tag clr-grey-5 br-common-2">
                               {item.tag[0]}
                             </span>
                           ) : null}
@@ -85,7 +89,7 @@ const Kanban = ({ groups, data }) => {
                             data[item.userId]?.available ?? item.available
                           }
                           round={true}
-                          size={20}
+                          size={18}
                         />
                       </div>
                     </div>
